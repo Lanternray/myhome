@@ -28,7 +28,7 @@ body {
     display: flex;
     justify-content: space-between;
     /* padding: 1rem 10rem 1rem 10rem; */
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0 2rem 0;
 }
 
 .header-top-spacer {
@@ -53,7 +53,7 @@ body {
 
 .header-container {
     display: flex;
-    /* padding: 1rem 10rem 1rem 10rem; */
+    padding: 0 0 1rem 0;
 }
 
 .header-spacer {
@@ -61,14 +61,27 @@ body {
 }
 
 .header-container-left {
-    flex: 2;
-    padding: 2px;
+    flex: 3;
+    padding: 4px;
 }
 
 .header-container-right {
-    background-color: grey;
-    flex: 2;
-    padding: 2px;
+    /* background-color: grey; */
+    flex: 3;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img img {
+    display: block;
+    height: auto;
+    margin: auto;
+}
+
+.profile-img {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
 }
 
 /* background section */
@@ -76,6 +89,8 @@ body {
 .wrapper {
     display: flex;
     gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .info-section {
@@ -83,7 +98,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem 10rem 1rem 10rem;
+    padding-top: 10px;
+    flex: 1;
 }
 
 .info-containers {
@@ -100,4 +116,14 @@ body {
 
 .text {
     max-width: 100px;
+}
+
+.footer {
+    margin-top: auto;
+    background-color: #1f2937;
+    padding: 1rem 0rem 1rem 0rem;
+    width: 100%;
+    text-align: center;
+    color: #f9faf8;
+    font-size: 12px;
 }
