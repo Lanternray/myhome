@@ -27,7 +27,16 @@ body {
 .header-top-row {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 10rem 1rem 10rem;
+    /* padding: 1rem 10rem 1rem 10rem; */
+    padding: 1rem 0 1rem 0;
+}
+
+.header-top-spacer {
+    flex: 1;
+}
+
+.header-logo {
+    flex: 4;
 }
 
 .header-links ul {
@@ -35,6 +44,7 @@ body {
     margin: 0px;
     gap: 10px;
     display: flex;
+    flex: 4;
 }
 
 .header-links.li {
@@ -43,17 +53,21 @@ body {
 
 .header-container {
     display: flex;
-    padding: 1rem 10rem 1rem 10rem;
+    /* padding: 1rem 10rem 1rem 10rem; */
+}
+
+.header-spacer {
+    flex: 1;
 }
 
 .header-container-left {
-    flex: 1;
+    flex: 2;
     padding: 2px;
 }
 
 .header-container-right {
     background-color: grey;
-    flex: 1;
+    flex: 2;
     padding: 2px;
 }
 
@@ -61,7 +75,7 @@ body {
 
 .wrapper {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .info-section {
