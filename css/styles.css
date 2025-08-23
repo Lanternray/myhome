@@ -54,23 +54,29 @@ body {
 .header-container {
     display: flex;
     padding: 0 0 1rem 0;
+    flex-wrap: wrap;
 }
 
 .header-spacer {
     flex: 1;
 }
 
-.header-container-left {
+.center-container {
+    display: flex;
     flex: 3;
+    flex-wrap: wrap;
+}
+
+.header-container-left {
     padding: 4px;
+    flex: 1;
 }
 
 .header-container-right {
-    /* background-color: grey; */
-    flex: 3;
     padding: 4px;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 .profile-img img {
