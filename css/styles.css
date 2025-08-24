@@ -62,7 +62,7 @@ body {
 
 .center-container {
     display: flex;
-    flex: 3;
+    flex: 5;
     flex-wrap: wrap;
 }
 
