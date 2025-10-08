@@ -39,6 +39,8 @@ body {
 
 .header-logo {
     flex: 3;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .header-links ul {
