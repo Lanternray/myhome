@@ -214,8 +214,8 @@ a {
     align-items: center;
 }
 
-#in-progress-title { text-align: left; max-width: 1200px; width: 100%; 
-    padding: 10px 0 0 20px;
+#in-progress-title { max-width: 1200px; width: 100%; 
+    padding: 10px 0 0 30px;
 }
 
 .cards-section {
