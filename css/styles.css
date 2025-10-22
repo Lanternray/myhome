@@ -156,6 +156,15 @@ a {
     object-fit: contain;
 }
 
+.header-links ul {
+    list-style-type: none;
+    margin: 0px;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    flex: 3;
+}
+
 .links {
     margin: 0px;
     gap: 4px;
