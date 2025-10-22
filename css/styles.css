@@ -156,8 +156,7 @@ a {
     object-fit: contain;
 }
 
-.header-links ul {
-    list-style-type: none;
+.links {
     margin: 0px;
     gap: 4px;
     display: flex;
