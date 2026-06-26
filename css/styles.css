@@ -309,7 +309,9 @@ button:focus-visible {
 }
 
 .section-heading,
-.cards-section {
+.cards-section,
+.skills-section,
+.education-section {
     width: min(100%, 1180px);
 }
 
@@ -390,6 +392,147 @@ button:focus-visible {
     font-weight: 700;
 }
 
+.cards-in-progress .card-item-list ul {
+    display: block;
+    padding-left: 1.1rem;
+    list-style: disc;
+}
+
+.cards-in-progress .card-item-list li {
+    display: list-item;
+    min-height: 0;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    background: transparent;
+    color: var(--muted);
+    font-size: 0.88rem;
+    font-weight: 500;
+    line-height: 1.55;
+}
+
+.cards-in-progress .card-item-list li:last-child {
+    margin-bottom: 0;
+}
+
+.cards-completed .card-item-list ul {
+    display: grid;
+    gap: 12px;
+    list-style: none;
+}
+
+.cards-completed .card-item-list li {
+    display: grid;
+    min-height: 0;
+    gap: 3px;
+    align-items: start;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 13px 14px;
+    background: rgba(255, 255, 255, 0.065);
+}
+
+.work-date {
+    color: var(--accent-2);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.work-role {
+    color: var(--text);
+    font-size: 0.98rem;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.work-company {
+    color: var(--muted);
+    font-size: 0.86rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.skills-section,
+.education-section {
+    overflow: hidden;
+    margin-top: 18px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.055);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.22);
+}
+
+.skills-header,
+.education-header {
+    display: flex;
+    min-height: 58px;
+    align-items: center;
+    padding: 0 22px;
+    background: linear-gradient(90deg, rgba(239, 156, 90, 0.2), rgba(155, 188, 255, 0.08));
+}
+
+.skills-header {
+    background: linear-gradient(90deg, rgba(155, 188, 255, 0.2), rgba(239, 156, 90, 0.08));
+}
+
+.skills-header h3,
+.education-header h3 {
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    padding: 22px;
+    list-style: none;
+}
+
+.skills-grid li {
+    min-height: 38px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 9px 11px;
+    background: rgba(255, 255, 255, 0.065);
+    color: var(--text);
+    font-size: 0.88rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.education-details {
+    padding: 22px;
+}
+
+.education-details h4 {
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.education-location {
+    margin-top: 3px;
+    color: var(--muted);
+    font-size: 0.86rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.education-degree {
+    margin-top: 12px;
+    color: var(--accent-2);
+    font-size: 0.86rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
 .footer {
     width: 100%;
     padding: 18px 24px;
@@ -453,5 +596,9 @@ button:focus-visible {
 
     .cards-section {
         grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
